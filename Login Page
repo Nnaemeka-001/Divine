@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(./image/2042d92bc425a25b343038d6e2362432.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container{
+        background-color: whitesmoke;
+        color: black;
+        padding: 10px 20px 0;
+        border-radius: 50px;
+        margin: 0 auto;
+        padding: 50px 30px 0 30px;
+        width: 800px;
+    }
+
+    input{
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px 0;
+        border: none;
+    }
+
+    p{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <h2>SIGN UP</h2>
+        <form>
+        <input type="email" placeholder="Email Address"><br>
+        <input type="password" placeholder="Password"><br>
+
+        <button>Create Account</button>
+
+        <p>Already have an account? Sign In</p>
+        </form>
+    </div> 
+</body>
+</html>
