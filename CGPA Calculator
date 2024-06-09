@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Calculator</title>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(115deg, whitesmoke 30%, silver 70%);
+}
+.container {
+  width:400px;
+  margin:50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: whitesmoke;
+  box-shadow: 0px 0px 10px 3px #ffffff;
+}
+.container h2{
+  background-color: whitesmoke;
+  margin-left: 100px;
+}
+.container label{
+  background-color: whitesmoke;
+}
+</style>
+<body>
+<div class="container">
+<h2>CGPA Calculator</h2>
+
+<label for="gradeCSC104">Grade for CSC 104:</label>
+<select id="gradeCSC104" onchange="calculateCGPA()">
+  <option value="4.0">A</option>
+  <option value="3.5">B+</option>
+  <option value="3.0">B</option>
+  <option value="2.5">C+</option>
+  <option value="2.0">C</option>
+  <option value="1.5">D+</option>
+  <option value="1.0">D</option>
+  <option value="0.0">F</option>
+</select>
+<br>
+
+<label for="gradeCSC105">Grade for CSC 105:</label>
+<select id="gradeCSC105" onchange="calculateCGPA()">
+  <option value="4.0">A</option>
+  <option value="3.5">B+</option>
+  <option value="3.0">B</option>
+  <option value="2.5">C+</option>
+  <option value="2.0">C</option>
+  <option value="1.5">D+</option>
+  <option value="1.0">D</option>
+  <option value="0.0">F</option>
+</select>
+<br>
+
+<p>CGPA: <span id="cgpa">0.00</span></p>
+</div>
+<script>
+function calculateCGPA() {
+    var gradeCSC104 = parseFloat(document.getElementById("gradeCSC104").value);
+    var gradeCSC105 = parseFloat(document.getElementById("gradeCSC105").value);
+    
+    var totalGradePoints = (gradeCSC104 * 2) + (gradeCSC105 * 3);
+    var totalUnits = 2 + 3;
+    
+    var cgpa = totalGradePoints / totalUnits;
+    
+    document.getElementById("cgpa").innerHTML = cgpa.toFixed(2);
+}
+</script>
+</body>
+</html>
+
+
