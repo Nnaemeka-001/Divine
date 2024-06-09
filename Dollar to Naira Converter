@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dollar to Naira Converter</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(115deg, whitesmoke 30%, red 70%);
+    }
+    .container {
+        width:400px;
+        margin:50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius:5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: whitesmoke;
+        box-shadow: 0px 0px 10px 3px #ffffff;
+    }
+    .container h2{
+        background-color: whitesmoke;
+        margin-left: 50px;
+    }
+    .container label{
+        background-color: whitesmoke;
+    }
+</style>
+<body>
+<div class="container">
+<h2>Dollar to Naira Converter</h2>
+
+<label for="usdInput">Enter amount in USD:</label>
+<input type="number" id="usdInput" oninput="convertCurrency()" placeholder="Enter amount in USD">
+
+<p>Amount in NGN: <span id="result"></span></p>
+</div>
+<script>
+function convertCurrency() {
+    var usdAmount = document.getElementById("usdInput").value;
+    var ngnAmount = usdAmount * 1435; // Assuming 1 USD = 1435 NGN (change this value as needed)
+    document.getElementById("result").innerHTML = ngnAmount.toFixed(2) + " NGN";
+}
+</script>
+
+</body>
+</html>
+
+
