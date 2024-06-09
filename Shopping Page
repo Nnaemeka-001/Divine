@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 50px;
+    width: 100%;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    text-align: left;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 100px;
+}
+
+header input {
+    width: calc(100% - 20px);
+    padding: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item img {
+    max-width: 90%;
+    border: 3px solid white
+    ;
+    border-radius: 5px;
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption h2 {
+    margin: 10px 0 5px;
+    font-size: 50px;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 50px;
+    color: gray;
+}
+
+.nav {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 125px 0;
+    background-color:whitesmoke;
+    list-style: none;
+    padding-right: 500px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav  li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: 100px;
+    padding-left: 300px;
+}
+
+.nav img {
+    width: 24px;
+    height: 24px;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shop</h1>
+            <input type="text" placeholder="Search" style="font-size: 50px;">
+        </header>
+        <div class="item">
+            <img src="images/download (2).jpg" style="height: 500px; width: auto;"alt="Guitar">
+            <div class="caption">
+                <h2>GUITARS</h2>
+                <p>800 items</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/OIP.jpg" style="height: 500px; width: auto;" alt="Violin">
+            <div class="caption">
+                <h2>VIOLINS</h2>
+                <p>400 items</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>       
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 21 3 C 11.622998 3 4 10.623005 4 20 C 4 29.376995 11.622998 37 21 37 C 24.712383 37 28.139151 35.791079 30.9375 33.765625 L 44.085938 46.914062 L 46.914062 44.085938 L 33.886719 31.058594 C 36.443536 28.083 38 24.223631 38 20 C 38 10.623005 30.377002 3 21 3 z M 21 5 C 29.296122 5 36 11.703883 36 20 C 36 28.296117 29.296122 35 21 35 C 12.703878 35 6 28.296117 6 20 C 6 11.703883 12.703878 5 21 5 z"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 50 50">
+                    <path d="M17 2H7C5.89 2 5 2.89 5 4V22L12 18L19 22V4C19 2.89 18.11 2 17 2Z"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 50 50">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V17C2 18.1 2.9 19 4 19H5L7 21L9 19H20C21.1 19 22 18.1 22 17V4C22 2.9 21.1 2 20 2ZM20 17H4V4H20V17ZM12 14L5 10.27V6H19V10.27L12 14Z"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="200" height="200">
+                    <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="none"/>
+                    <path d="M12 14c-2.2 0-4 1.8-4 4h8c0-2.2-1.8-4-4-4zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="black"/>
+                    </svg></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
