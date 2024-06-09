@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interest Calculator</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(115deg, whitesmoke 30%, blue 70%);
+    }
+    .container {
+        width:400px;
+        margin:50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius:5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background: whitesmoke;
+        box-shadow: 0px 0px 10px 3px #ffffff;
+    }
+    .container h2{
+        background-color: whitesmoke;
+        margin-left: 50px;
+    }
+    .container label{
+        background-color: whitesmoke;
+    }
+</style>
+<body>
+<div class="container">
+<h2>Simple Interest Calculator</h2>
+
+<label for="principal">Principal amount:</label>
+<p><input type="number" id="principal" placeholder="Enter principal amount"></p>
+
+<label for="rate">Interest rate (in percentage):</label>
+<p><input type="number" id="rate" placeholder="Enter interest rate"></p>
+
+<label for="time">Time (in years):</label>
+<p><input type="number" id="time" placeholder="Enter time"></p>
+
+<button onclick="calculateSimpleInterest()">Calculate</button>
+
+<div id="result"></div>
+</div>
+<script>
+function calculateSimpleInterest() {
+    var principal = parseFloat(document.getElementById("principal").value);
+    var rate = parseFloat(document.getElementById("rate").value);
+    var time = parseFloat(document.getElementById("time").value);
+    
+    var interest = (principal * rate * time) / 100;
+    var totalAmount = principal + interest;
+    
+    var resultText = "Principal amount: $" + principal.toFixed(2) + "<br>";
+    resultText += "Interest rate: " + rate.toFixed(2) + "%<br>";
+    resultText += "Time: " + time.toFixed(2) + " years<br>";
+    resultText += "Interest amount: $" + interest.toFixed(2) + "<br>";
+    resultText += "Total amount: $" + totalAmount.toFixed(2);
+    
+    document.getElementById("result").innerHTML = resultText;
+}
+</script>
+
+</body>
+</html>
+
+
